@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    height: 3rem;
+}
+
+#sobre {
+    margin-top: 8rem;
+}
+
+#sobre img {
+    height: auto;
+    width: 20rem;
+    border-radius: 8px;
+}
+
+#sobre h3 {
+    text-align: left;
+}
+
+#sobre p {
+    text-align: left;
+}
+
+#portifolio {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+#portifolio h3 {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+#projetos {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    width: 60.2rem;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+#portifolio img {
+    height: auto;
+    width: 18rem;
+    border-radius: 8px;
+}
+
+svg {
+    height: auto;
+    width: 3rem;
+    margin-top: 13rem;
+    cursor: pointer;
+}
+
+.container-card {
+    background-color: white;
+    padding-bottom: 1rem;
+    border-radius: 8px;
+    border: 1psx solid gray;
+}
+
+.container-card-text {
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    padding-top: 1rem;
+}
+
+#back {
+    position: absolute;
+    left: 13rem;
+    top: 7rem
+}
+
+#forward {
+    position: absolute;
+    right: 12.5rem;
+    top: 7rem
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+#img-html {
+    width: 5rem;
+    height: auto;
+} 
+
+#img-css {
+    width: 5rem;
+    height: auto;
+} 
+
+#img-js {
+    width: 5rem;
+    height: auto;
+}
+
+#img-bootstrap {
+    width: 5rem;
+    height: auto;
+} 
+
+#container-skills {
+    display: grid;
+    gap: 2rem;
+    padding-left: 5rem;
+}
+
+.barra {
+    background-color: black;
+    width: 50rem;
+    height: 2rem;
+    border-radius: 15px;
+    padding-top: 0.15rem;
+}
+
+.barra p {
+    color: #34D1BF;
+    text-align: center;
+}
+
+#contato {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contato h3 {
+    color: white;
+}
+
+#container-contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+
+#formulario {
+    width: 20rem;
+}
+
+#localizacao img {
+    width: 30rem;
+    height: auto;
+}
+
+#localizacao h4 {
+    color: white;
+}
+
+#email::-webkit-input-placeholder {
+    color: black;
+    font-style: bold;
+}
+
+#nome::-webkit-input-placeholder {
+    color: black;
+    font-style: bold;
+}
+
+#mensagem::-webkit-input-placeholder {
+    color: black;
+    font-style: bold;
+}
+
+#mensagem {
+    resize: none;
+    width: 100%;
+    border-radius: 8px;
+}
+
+#formulario button {
+    background-color: #34D1BF;
+    width: 15rem;
+}
+
+#btn-container {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
