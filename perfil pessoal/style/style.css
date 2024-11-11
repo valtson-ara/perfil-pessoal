@@ -8,7 +8,7 @@ header {
 }
 
 #sobre {
-    margin-top: 8rem;
+    margin-top: 6rem;
 }
 
 #sobre img {
@@ -35,6 +35,7 @@ header {
     position: relative;
     padding-top: 1rem;
     padding-bottom: 3rem;
+    margin-top: 3rem;
 }
 
 #portifolio h3 {
@@ -53,8 +54,8 @@ header {
 
 #portifolio img {
     height: auto;
-    width: 18rem;
-    border-radius: 8px;
+    width: 17.9rem;
+    border-radius: 7.8px;
 }
 
 svg {
@@ -68,7 +69,8 @@ svg {
     background-color: white;
     padding-bottom: 1rem;
     border-radius: 8px;
-    border: 1psx solid gray;
+    
+    height: 21rem;
 }
 
 .container-card-text {
@@ -80,13 +82,13 @@ svg {
 #back {
     position: absolute;
     left: 13rem;
-    top: 7rem
+    top: 1rem
 }
 
 #forward {
     position: absolute;
     right: 12.5rem;
-    top: 7rem
+    top: 1rem
 }
 
 #skills {
@@ -140,6 +142,8 @@ svg {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 3rem;
+    padding-bottom: 1.5rem;
 }
 
 #contato h3 {
@@ -151,6 +155,7 @@ svg {
     flex-direction: row;
     justify-content: space-between;
     width: 80%;
+    margin-top: 1rem;
 }
 
 #formulario {
@@ -163,7 +168,9 @@ svg {
 }
 
 #localizacao h4 {
-    color: white;
+    color: #34D1BF;
+    text-align: center;
+    margin-top: 0.5rem;
 }
 
 #email::-webkit-input-placeholder {
@@ -190,10 +197,21 @@ svg {
 #formulario button {
     background-color: #34D1BF;
     width: 15rem;
+    transition: 1s;
+}
+
+#formulario button:hover {
+    background-color: #2fc9b7;
 }
 
 #btn-container {
    width: 100%;
    display: flex;
    justify-content: center;
+}
+
+footer p {
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
 }
