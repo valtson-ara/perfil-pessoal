@@ -55,7 +55,7 @@ header {
 #portifolio img {
     height: auto;
     width: 17.9rem;
-    border-radius: 7.8px;
+    border-radius: 2px;
 }
 
 svg {
@@ -68,8 +68,7 @@ svg {
 .container-card {
     background-color: white;
     padding-bottom: 1rem;
-    border-radius: 8px;
-    
+    border-radius: 2px;
     height: 21rem;
 }
 
@@ -144,6 +143,7 @@ svg {
     align-items: center;
     margin-top: 3rem;
     padding-bottom: 1.5rem;
+    padding-top: 0.5rem;
 }
 
 #contato h3 {
