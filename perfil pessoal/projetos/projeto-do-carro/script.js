@@ -49,11 +49,22 @@ carWhite.addEventListener('click', () => {
 })
 
 btnAcelerar.addEventListener('click', () => {
-    carroSelecionado.style.transform = `translateY(${velocidade -= 10}px)`
+
+    if (velocidade > -40 && carroSelecionado.id === 'red') {
+        carroSelecionado.style.transform = `translate(${-12}px,${velocidade -= 10}px)`
+    } else if (velocidade > -40 && carroSelecionado.id === 'white') {
+         carroSelecionado.style.transform = `translate(${12}px,${velocidade -= 10}px)`
+    }
 })
 
 btnDesacelerar.addEventListener('click', () => {
-    carroSelecionado.style.transform = `translateY(${velocidade += 10}px)`
+
+    if (velocidade < 30 && carroSelecionado.id === 'red') {
+        carroSelecionado.style.transform = `translate(${-7}px,${velocidade += 10}px)`
+    } else if (velocidade < 30 && carroSelecionado.id === 'white') {
+         carroSelecionado.style.transform = `translate(${7}px,${velocidade += 10}px)`
+    }
+    
 })
 
 btnResetar.addEventListener('click', resetar)
@@ -64,23 +75,24 @@ carWhite.setAttribute('tabindex', '0')
 carRed.addEventListener('keydown', (ev) => {
     ev.preventDefault()
 
-    if (ev.key === 'ArrowUp') {
-         carroSelecionado.style.transform = `translateY(${velocidade -= 10}px)`
+    if (ev.key === 'ArrowUp' && velocidade > -40) {
+         carroSelecionado.style.transform = `translate(${-12}px,${velocidade -= 10}px)`
     }
 
-    if (ev.key === 'ArrowDown') {
-        carroSelecionado.style.transform = `translateY(${velocidade += 10}px)`
+    if (ev.key === 'ArrowDown' && velocidade < 30) {
+        carroSelecionado.style.transform = `translate(${-7}px,${velocidade += 10}px)`
+        
     }
 })
 
 carWhite.addEventListener('keydown', (ev) => {
     ev.preventDefault()
 
-    if (ev.key === 'ArrowUp') {
-         carroSelecionado.style.transform = `translateY(${velocidade -= 10}px)`
+    if (ev.key === 'ArrowUp' && velocidade > -40) {
+         carroSelecionado.style.transform = `translate(${12}px,${velocidade -= 10}px)`
     }
 
-    if (ev.key === 'ArrowDown') {
-        carroSelecionado.style.transform = `translateY(${velocidade += 10}px)`
+    if (ev.key === 'ArrowDown' && velocidade < 30) {
+        carroSelecionado.style.transform = `translate(${7}px,${velocidade += 10}px)`
     }
 })

@@ -1,3 +1,5 @@
+// Faz o processo de scroll na parte do portifólio.
+
 const btnBack = document.getElementById('back')
 const btnForward = document.getElementById('forward')
 const card = document.getElementById('card-one')
